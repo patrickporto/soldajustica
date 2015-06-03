@@ -47,7 +47,7 @@
     <Compile Include="blog\__init__.py" />
     <Compile Include="manage.py" />
     <Compile Include="soldajustica\__init__.py" />
-    <Compile Include="soldajustica\settings.py" />
+    <Compile Include="soldajustica\setttings.py" />
     <Compile Include="soldajustica\urls.py" />
     <Compile Include="soldajustica\wsgi.py" />
     <Compile Include="__init__.py">
@@ -68,6 +68,9 @@
     <Folder Include="soldajustica\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="..\.gitignore">
+      <Link>.gitignore</Link>
+    </Content>
     <Content Include="..\Procfile">
       <Link>Procfile</Link>
     </Content>
