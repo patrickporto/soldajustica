@@ -1,1 +1,1 @@
-web: gunicorn soldajustica.soldajustica.wsgi
+web: sh -c 'cd ./soldajustica/ && gunicorn soldajustica.wsgi'
