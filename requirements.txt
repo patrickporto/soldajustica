@@ -2,6 +2,6 @@ django>=1.8,<1.9
 django-suit==0.2.13
 django-suit-redactor==0.0.2
 gunicorn
-pycopg2
+psycopg2
 dj_database_url
 dj_static
