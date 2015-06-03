@@ -130,12 +130,13 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'app',
-    # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
-    # Uncomment the next line to enable admin documentation:
-    # 'django.contrib.admindocs',
 )
+
+PROJECT_APPS = (
+    'app',
+    'blog',
+)
+INSTALLED_APPS += PROJECT_APPS
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
