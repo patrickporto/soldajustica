@@ -66,7 +66,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="blog\templates\index.html" />
-    <Content Include="requirements.txt" />
     <Content Include="app\static\app\content\bootstrap.css" />
     <Content Include="app\static\app\content\bootstrap.min.css" />
     <Content Include="app\static\app\content\site.css" />
@@ -95,6 +94,8 @@
     <Content Include="app\templates\app\layout.html" />
     <Content Include="app\templates\app\login.html" />
     <Content Include="app\templates\app\loginpartial.html" />
+    <Content Include="Procfile" />
+    <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="readme.mht">
