@@ -4,3 +4,4 @@ django-suit-redactor==0.0.2
 gunicorn
 pycopg2
 dj_database_url
+dj_static
