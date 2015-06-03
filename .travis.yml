@@ -4,4 +4,5 @@ python:
 # command to install dependencies
 install: "pip install -r requirements.txt"
 # command to run tests
-script: soldajustica/python manage.py test
+script: python manage.py test
+before_install: cd soldajustica
