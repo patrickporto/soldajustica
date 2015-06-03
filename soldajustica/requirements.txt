@@ -1,4 +1,0 @@
-django>=1.8,<1.9
-django-suit==0.2.13
-django-suit-redactor==0.0.2
-gunicorn

@@ -1,1 +1,1 @@
-web: gunicorn soldajustica.wsgi
+web: gunicorn soldajustica.soldajustica.wsgi

@@ -50,6 +50,9 @@
     <Compile Include="soldajustica\settings.py" />
     <Compile Include="soldajustica\urls.py" />
     <Compile Include="soldajustica\wsgi.py" />
+    <Compile Include="__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\" />
@@ -65,6 +68,12 @@
     <Folder Include="soldajustica\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="..\Procfile">
+      <Link>Procfile</Link>
+    </Content>
+    <Content Include="..\requirements.txt">
+      <Link>requirements.txt</Link>
+    </Content>
     <Content Include="blog\templates\index.html" />
     <Content Include="app\static\app\content\bootstrap.css" />
     <Content Include="app\static\app\content\bootstrap.min.css" />
@@ -94,8 +103,7 @@
     <Content Include="app\templates\app\layout.html" />
     <Content Include="app\templates\app\login.html" />
     <Content Include="app\templates\app\loginpartial.html" />
-    <Content Include="Procfile" />
-    <Content Include="requirements.txt" />
+    <Content Include="runtime.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="readme.mht">
