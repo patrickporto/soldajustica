@@ -6,6 +6,7 @@
     <RootNamespace>soldajustica</RootNamespace>
     <InterpreterId>{8f0258c5-8627-47c1-900e-35085324f59a}</InterpreterId>
     <InterpreterVersion>3.4</InterpreterVersion>
+    <WebBrowserPort>8080</WebBrowserPort>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -34,6 +35,12 @@
     <Compile Include="app\tests.py" />
     <Compile Include="app\views.py" />
     <Compile Include="app\__init__.py" />
+    <Compile Include="blog\admin.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="blog\forms.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="blog\models.py" />
     <Compile Include="blog\tests.py" />
     <Compile Include="blog\views.py" />

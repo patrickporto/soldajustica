@@ -1,7 +1,7 @@
 """
 Django settings for soldajustica project.
 """
-
+from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS
 from os import path
 PROJECT_ROOT = path.dirname(path.abspath(path.dirname(__file__)))
 
@@ -42,7 +42,7 @@ TIME_ZONE = 'America/Chicago'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
 SITE_ID = 1
 
@@ -130,6 +130,9 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'suit',
+    'django.contrib.admin',
+    'suit_redactor',
 )
 
 PROJECT_APPS = (
@@ -169,3 +172,7 @@ LOGGING = {
 
 # Specify the default test runner.
 TEST_RUNNER = 'django.test.runner.DiscoverRunner'
+
+TEMPLATE_CONTEXT_PROCESSORS += (
+    'django.core.context_processors.request',
+)
