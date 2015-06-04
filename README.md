@@ -1,4 +1,4 @@
-![Travis CI](https://api.travis-ci.org/patrickporto/soldajustica.svg)
+[![Build Status](https://api.travis-ci.org/patrickporto/soldajustica.svg)](https://travis-ci.org/patrickporto/soldajustica)
 # soldajustica #
 Site oficial da igreja sol da justiça
 
