@@ -4,6 +4,7 @@ Django settings for soldajustica project.
 from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS
 from os import (path, environ,)
 import dj_database_url
+import sys
 PROJECT_ROOT = path.dirname(path.abspath(path.dirname(__file__)))
 
 DEBUG = True
@@ -23,20 +24,27 @@ ADMINS = (
 MANAGERS = ADMINS
 
 DATABASES = {
-    'local': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': path.join(PROJECT_ROOT, 'db.sqlite3'),
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '',
-        'PORT': '',
-    },
-    'production': dj_database_url.config()
+    'default': {},
 }
-if DATABASES['production']:
-    DATABASES['default'] = DATABASES['production']
+
+production_db = dj_database_url.config()
+if 'test' in sys.argv:
+    DATABASES['default'] = {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': ':memory:',
+    }
 else:
-    DATABASES['default'] = DATABASES['local']
+    if production_db:
+        DATABASES['default'] = production_db
+    else:
+        DATABASES['default'] = {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': path.join(PROJECT_ROOT, 'db.sqlite3'),
+            'USER': '',
+            'PASSWORD': '',
+            'HOST': '',
+            'PORT': '',
+        }
 
 LOGIN_URL = '/login'
 

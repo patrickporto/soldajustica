@@ -17,4 +17,5 @@ class PostTestCase(TestCase):
         post.author = user
         post.title = 'My first post'
         post.content = 'This is my first post'
+        post.published = True
         post.save()
