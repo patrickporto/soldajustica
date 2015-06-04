@@ -32,7 +32,6 @@
   <ItemGroup>
     <Compile Include="app\forms.py" />
     <Compile Include="app\models.py" />
-    <Compile Include="app\tests.py" />
     <Compile Include="app\views.py" />
     <Compile Include="app\__init__.py" />
     <Compile Include="blog\admin.py">
@@ -46,10 +45,14 @@
     <Compile Include="blog\views.py" />
     <Compile Include="blog\__init__.py" />
     <Compile Include="manage.py" />
+    <Compile Include="soldajustica\settings.py" />
     <Compile Include="soldajustica\__init__.py" />
     <Compile Include="soldajustica\setttings.py" />
     <Compile Include="soldajustica\urls.py" />
     <Compile Include="soldajustica\wsgi.py" />
+    <Compile Include="tasks.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="__init__.py">
       <SubType>Code</SubType>
     </Compile>
