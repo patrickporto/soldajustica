@@ -5,4 +5,4 @@ gunicorn
 psycopg2
 dj_database_url
 dj_static
-invoke=0.10.1
+invoke==0.10.1
