@@ -1,0 +1,89 @@
+﻿@bgDefault: #f39c12;
+@bgHighlight: #e67e22;
+@colDefault: #ffffff;
+@colHighlight: #f1c40f;
+
+.navbar-default {
+    border-radius: 0;
+    border: none;
+    background-color: @bgDefault;
+    border-color: @bgHighlight;
+    .navbar-brand {
+        color: @colDefault;
+        &:hover,
+        &:focus { 
+            color: @colHighlight;
+        }
+    }
+    .navbar-text {
+        color: @colDefault;
+    }
+    .navbar-nav {
+        > li {
+            > a {
+                color: @colDefault;
+                &:hover,
+                &:focus {
+                    color: @colHighlight;
+                    background-color: @bgHighlight;
+                    transition: all ease-in-out 0.3s;
+                }
+            }
+        }
+        > .active {
+            > a,
+            > a:hover,
+            > a:focus {
+                color: @colHighlight;
+                background-color: @bgHighlight;
+                transition: all ease-in-out 0.3s;
+            }
+        }
+        > .open {
+            > a,
+            > a:hover,
+            > a:focus {
+                color: @colHighlight;
+                background-color: @bgHighlight;
+                transition: all ease-in-out 0.3s;
+            }
+        }
+    }
+    .navbar-toggle {
+        border-color: @bgHighlight;
+        &:hover, &:focus {
+            background-color: @bgHighlight;
+        }
+        .icon-bar {
+            background-color: @colDefault;
+        }
+    }
+    .navbar-collapse,
+    .navbar-form {
+        border-color: @colDefault;
+    }
+    .navbar-link {
+        color: @colDefault;
+        &:hover {
+            color: @colHighlight;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu {
+        > li > a {
+            color: @colDefault;
+            &:hover, &:focus {
+                color: @colHighlight;
+            }
+        }
+        > .active {
+            > a,
+            > a:hover,
+            > a:focus{
+                color: @colHighlight;
+                background-color: @bgHighlight; 
+            }
+        }
+    }
+}

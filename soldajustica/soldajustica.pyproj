@@ -80,10 +80,10 @@
     <Content Include="..\requirements.txt">
       <Link>requirements.txt</Link>
     </Content>
+    <Content Include="app\static\app\content\site.less" />
     <Content Include="blog\templates\index.html" />
     <Content Include="app\static\app\content\bootstrap.css" />
     <Content Include="app\static\app\content\bootstrap.min.css" />
-    <Content Include="app\static\app\content\site.css" />
     <Content Include="app\static\app\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="app\static\app\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="app\static\app\fonts\glyphicons-halflings-regular.ttf" />
