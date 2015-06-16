@@ -139,3 +139,23 @@
         font-size: 24pt;
     }
 }
+
+.project{
+    &-list-empty {
+        text-align: center;
+        font-size: 18px;
+    }
+    &-item {
+        &-img {
+            @media (max-width: 767px) {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            @media (min-width: 768px) {
+                margin-top: 20%;
+            }
+            max-width: 160px;
+            max-height: 160px;
+        }
+    }
+}

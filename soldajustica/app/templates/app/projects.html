@@ -1,0 +1,27 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2 class="text-center">Projetos</h2>
+<div class="row">
+    <div class="project-list">
+        {% for project in projects %}
+        <div class="col-sm-6">
+            <div class="project-item">
+                <div class="col-sm-4">
+                    <img src="{{ project.image.url }}" alt="{{ project.name.url }}" class="img-responsive img-circle project-item-img" />
+                </div>
+                <div class="col-sm-8">
+                    <h3>{{ project.name }}</h3>
+                    <p>{{ project.description }}"</p>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <div class="col-xs-12">
+            <p class="project-list-empty">Nenhum Projeto em andamento</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

@@ -7,6 +7,7 @@
     <InterpreterId>{8f0258c5-8627-47c1-900e-35085324f59a}</InterpreterId>
     <InterpreterVersion>3.4</InterpreterVersion>
     <WebBrowserPort>8080</WebBrowserPort>
+    <PythonDebugWebServerCommandArguments>runserver $(CommandLineArguments)</PythonDebugWebServerCommandArguments>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -32,6 +33,7 @@
   <ItemGroup>
     <Compile Include="app\forms.py" />
     <Compile Include="app\models.py" />
+    <Compile Include="app\urls.py" />
     <Compile Include="app\views.py" />
     <Compile Include="app\__init__.py" />
     <Compile Include="blog\admin.py">
@@ -45,9 +47,15 @@
     <Compile Include="blog\views.py" />
     <Compile Include="blog\__init__.py" />
     <Compile Include="manage.py" />
+    <Compile Include="project\admin.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="project\models.py" />
+    <Compile Include="project\tests.py" />
+    <Compile Include="project\views.py" />
+    <Compile Include="project\__init__.py" />
     <Compile Include="soldajustica\settings.py" />
     <Compile Include="soldajustica\__init__.py" />
-    <Compile Include="soldajustica\setttings.py" />
     <Compile Include="soldajustica\urls.py" />
     <Compile Include="soldajustica\wsgi.py" />
     <Compile Include="tasks.py">
@@ -68,6 +76,8 @@
     <Folder Include="app\templates\app\" />
     <Folder Include="blog\" />
     <Folder Include="blog\templates\" />
+    <Folder Include="project\" />
+    <Folder Include="project\templates\" />
     <Folder Include="soldajustica\" />
   </ItemGroup>
   <ItemGroup>
@@ -81,6 +91,7 @@
       <Link>requirements.txt</Link>
     </Content>
     <Content Include="app\static\app\content\site.less" />
+    <Content Include="app\templates\app\projects.html" />
     <Content Include="blog\templates\index.html" />
     <Content Include="app\static\app\content\bootstrap.css" />
     <Content Include="app\static\app\content\bootstrap.min.css" />
@@ -109,6 +120,7 @@
     <Content Include="app\templates\app\layout.html" />
     <Content Include="app\templates\app\login.html" />
     <Content Include="app\templates\app\loginpartial.html" />
+    <Content Include="project\templates\index.html" />
     <Content Include="runtime.txt" />
   </ItemGroup>
   <ItemGroup>
