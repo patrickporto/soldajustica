@@ -2,6 +2,13 @@
 * {
   font-family: 'Nunito', sans-serif;
 }
+a {
+  color: #ffffff;
+}
+a:hover,
+a:focus {
+  color: #f1c40f;
+}
 .navbar-default {
   border-radius: 0;
   border: none;
@@ -118,13 +125,6 @@
 .main-link:last-child {
   border-right: none;
 }
-.main-link a {
-  color: #ffffff;
-}
-.main-link a:hover,
-.main-link a:focus {
-  color: #f1c40f;
-}
 .main-link a:after,
 .main-link a:before {
   content: "|";
@@ -150,5 +150,15 @@
   .project-item-img {
     margin-top: 20%;
   }
+}
+.footer {
+  margin-top: 30px;
+  background-color: #f39c12;
+  color: #ffffff;
+  padding: 20px;
+}
+.footer .address {
+  display: inline-table;
+  margin-left: 25px;
 }
 /*# sourceMappingURL=site.css.map */
