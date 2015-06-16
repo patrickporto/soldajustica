@@ -1,0 +1,46 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2 class="text-center">Conheça nossa Obra</h2>
+<div class="row">
+    <div class="get-involded-list">
+        <div class="col-sm-4">
+            <div class="get-involded-item">
+                <h3 class="get-involded-header">OBREIROS</h3>
+                <img src="{{ STATIC_URL }}app/img/obreiros.jpg" alt="{{ project.name.url }}" class="img-responsive get-involded-img" />
+                <p>
+                    Ser um Obreiro provado e aprovado por Deus, é uma busca pessoal,
+                    pois o verdadeiro obreiro assemelha-se ao bom servo que serviu com honra e exelência ao seu senhor,
+                    pode ser exaltado por ele, e teve seu nome escrito no livro da vida.
+                    Venha e faça parte da aliança de obreiros projetando as suas ideias connosco, e participando na
+                    criação de projetos para a obra de Cristo jesus.
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="get-involded-item">
+                <h3 class="get-involded-header">PROFESSORES</h3>
+                <img src="{{ STATIC_URL }}app/img/professores.jpg" alt="{{ project.name.url }}" class="img-responsive get-involded-img" />
+                <p>
+                    Sou um parágrafo. Clique aqui para me editar e adicionar seu texto.
+                    É fácil! Basta clicar em "Editar Texto" ou clicar duas vezes sobre mim e
+                    você poderá adicionar seu próprio conteúdo e trocar fontes. Sou um ótimo lugar
+                    para contar sua história e permitir que seus visitantes saibam um pouco mais sobre você.
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="get-involded-item">
+                <h3 class="get-involded-header">EVANGELISTAS</h3>
+                <img src="{{ STATIC_URL }}app/img/evangelistas.jpg" alt="{{ project.name.url }}" class="img-responsive get-involded-img" />
+                <p>
+                    Ser um evangelista é compreender a necessidade das almas independente daonde elas estejam.
+                    Buscando sempre graça no senhor para a conclusão de projetos que irão gerar almas para a salvação
+                    em Cristo Jesus. Venha e participe dos nossos projetos com a gente.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
