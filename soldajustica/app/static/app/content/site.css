@@ -180,4 +180,13 @@ a:focus {
 h1 {
   text-align: center;
 }
+.donate-box {
+  text-align: center;
+  background: #f39c12;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.donate-box .glyphicon {
+  font-size: 24pt;
+}
 /*# sourceMappingURL=site.css.map */

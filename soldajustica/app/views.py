@@ -17,3 +17,7 @@ def projects(request):
 
 def get_involved(request):
     return render(request, 'app/get_involved.html')
+
+
+def donate(request):
+    return render(request, 'app/donate.html')
