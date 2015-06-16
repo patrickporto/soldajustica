@@ -1,7 +1,13 @@
-﻿@bgDefault: #f39c12;
+﻿@import url(http://fonts.googleapis.com/css?family=Nunito);
+
+@bgDefault: #f39c12;
 @bgHighlight: #e67e22;
 @colDefault: #ffffff;
 @colHighlight: #f1c40f;
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
 
 .navbar-default {
     border-radius: 0;
@@ -85,5 +91,51 @@
                 background-color: @bgHighlight; 
             }
         }
+    }
+}
+
+.main-link {
+    &-list {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background: @bgDefault;
+    }
+    color: @colDefault;
+    text-align: center;
+    background: @bgDefault;
+    border-right: 1px solid @colDefault;
+    @media (max-width: 751px) {
+        width: 100%;
+    }
+    @media (min-width: 752px) and  (max-width: 767px) {
+        width: 49.71%;
+    }
+    @media (min-width: 768px) and (max-width: 992px) {
+        width: 24.56379%;
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+        width: 24.66589%;
+    }
+    @media (min-width: 1200px) {
+        width: 24.7245%;
+    }
+    display: inline-block;
+    &:last-child {
+        border-right: none;
+    }
+    a {
+        color: @colDefault;
+        &:hover,
+        &:focus {
+            color: @colHighlight;
+        }
+        &:after, &:before {
+            content: "|";
+        }
+    }
+    .glyphicon {
+        font-size: 24pt;
     }
 }

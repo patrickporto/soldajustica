@@ -1,4 +1,8 @@
-﻿.navbar-default {
+﻿@import url(http://fonts.googleapis.com/css?family=Nunito);
+* {
+  font-family: 'Nunito', sans-serif;
+}
+.navbar-default {
   border-radius: 0;
   border: none;
   background-color: #f39c12;
@@ -71,5 +75,61 @@
     color: #f1c40f;
     background-color: #e67e22;
   }
+}
+.main-link {
+  color: #ffffff;
+  text-align: center;
+  background: #f39c12;
+  border-right: 1px solid #ffffff;
+  display: inline-block;
+}
+.main-link-list {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #f39c12;
+}
+@media (max-width: 751px) {
+  .main-link {
+    width: 100%;
+  }
+}
+@media (min-width: 752px) and (max-width: 767px) {
+  .main-link {
+    width: 49.71%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .main-link {
+    width: 24.56379%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-link {
+    width: 24.66589%;
+  }
+}
+@media (min-width: 1200px) {
+  .main-link {
+    width: 24.7245%;
+  }
+}
+.main-link:last-child {
+  border-right: none;
+}
+.main-link a {
+  color: #ffffff;
+}
+.main-link a:hover,
+.main-link a:focus {
+  color: #f1c40f;
+}
+.main-link a:after,
+.main-link a:before {
+  content: "|";
+}
+.main-link .glyphicon {
+  font-size: 24pt;
 }
 /*# sourceMappingURL=site.css.map */
