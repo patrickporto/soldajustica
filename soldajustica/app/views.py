@@ -4,9 +4,12 @@ from django.shortcuts import (
 )
 from project.models import Project
 from blog.models import Post
+from .models import Slide
 
 def home(request):
-    return render(request, 'app/index.html')
+    context = {}
+    context['carousel'] = Slide.objects.filter(active=True)
+    return render(request, 'app/index.html', context)
 
 def contact(request):
     return render(request, 'app/contact.html')

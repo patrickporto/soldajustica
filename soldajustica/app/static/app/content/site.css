@@ -205,4 +205,9 @@ h1 {
   background: #e67e22;
   transition: all ease-in 0.3s;
 }
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 1200px;
+  height: 500px;
+}
 /*# sourceMappingURL=site.css.map */
