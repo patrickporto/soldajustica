@@ -10,4 +10,6 @@ urlpatterns = patterns('',
     url(r'^projects', 'app.views.projects', name='projects'),
     url(r'^get-involved', 'app.views.get_involved', name='get-involved'),
     url(r'^donate', 'app.views.donate', name='donate'),
+    url(r'^news/$', 'app.views.news_list', name='news_list'),
+    url(r'^news/(?P<slug>.*)/', 'app.views.news_details', name='news_details'),
 )

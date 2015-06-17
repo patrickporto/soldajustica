@@ -1,0 +1,22 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2 class="text-center">Artigos</h2>
+<div class="row-fluid">
+    {% for post in posts %}
+    <section>
+        <header>
+            <h3>{{ post.title }}</h3>
+            <p><small>{{ post.author.get_full_name }} - {{ post.pub_date }}</small></p>
+        </header>
+        <article>
+            {{ post.content|safe|truncatechars:140 }}
+            <a href="{{ post.get_absolute_url }}" class="btn btn-primary">Leia mais</a>
+        </article>
+    </section>
+    {% empty %}
+    <p class="list-empty">Nenhum Artigo em andamento</p>
+    {% endfor %}
+</div>
+{% endblock %}

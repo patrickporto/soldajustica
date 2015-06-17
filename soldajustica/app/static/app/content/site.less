@@ -144,10 +144,6 @@ a {
 }
 
 .project{
-    &-list-empty {
-        text-align: center;
-        font-size: 18px;
-    }
     &-item {
         &-img {
             @media (max-width: 767px) {
@@ -202,10 +198,32 @@ h1 {
 
 .donate-box {
     text-align: center;
+    color: @colDefault;
     .glyphicon {
         font-size: 24pt;
     }
     background: @bgDefault;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.list-empty {
+    text-align: center;
+    font-size: 18px;
+}
+
+.btn {
+    border-radius: 0;
+    border: none;
+    &-primary {
+        color:@colDefault;
+        background: @bgDefault;
+        transition: all ease-in 0.3s;
+        &:hover,
+        &focus {
+            color: @colHighlight;
+            background: @bgHighlight;
+            transition: all ease-in 0.3s;
+        }
+    }
 }

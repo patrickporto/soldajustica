@@ -1,5 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import (
+    render,
+    get_object_or_404,
+)
 from project.models import Project
+from blog.models import Post
 
 def home(request):
     return render(request, 'app/index.html')
@@ -18,6 +22,15 @@ def projects(request):
 def get_involved(request):
     return render(request, 'app/get_involved.html')
 
-
 def donate(request):
     return render(request, 'app/donate.html')
+
+def news_list(request):
+    context = {}
+    context['posts'] = Post.objects.filter(published=True)
+    return render(request, 'app/news/list.html', context)
+
+def news_details(request, slug):
+    context = {}
+    context['post'] = get_object_or_404(Post, slug=slug)
+    return render(request, 'app/news/details.html', context)
