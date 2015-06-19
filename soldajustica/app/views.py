@@ -2,6 +2,7 @@ from django.shortcuts import (
     render,
     get_object_or_404,
 )
+from gallery.models import Gallery
 from ministry.models import Ministry
 from project.models import Project
 from blog.models import Post
@@ -48,3 +49,8 @@ def ministries_details(request, slug):
     context = {}
     context['ministry'] = get_object_or_404(Ministry, slug=slug)
     return render(request, 'app/ministries/details.html', context)
+
+def galleries(request):
+    context = {}
+    context['galleries'] = Gallery.objects.all()
+    return render(request, 'app/galleries.html', context)

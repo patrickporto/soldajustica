@@ -157,6 +157,7 @@ PROJECT_APPS = (
     'blog',
     'project',
     'ministry',
+    'gallery',
 )
 INSTALLED_APPS += PROJECT_APPS
 

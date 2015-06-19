@@ -246,4 +246,8 @@ h1 {
   color: #f1c40f;
   transition: all ease-in 0.3s;
 }
+.popup-gallery img {
+  width: 75px;
+  height: 75px;
+}
 /*# sourceMappingURL=site.css.map */

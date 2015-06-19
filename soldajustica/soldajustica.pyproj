@@ -48,13 +48,20 @@
     <Compile Include="blog\models.py" />
     <Compile Include="blog\tests.py" />
     <Compile Include="blog\__init__.py" />
+    <Compile Include="gallery\admin.py" />
+    <Compile Include="gallery\migrations\__init__.py" />
+    <Compile Include="gallery\models.py" />
+    <Compile Include="gallery\tests.py" />
+    <Compile Include="gallery\views.py" />
+    <Compile Include="gallery\__init__.py" />
     <Compile Include="manage.py" />
-    <Compile Include="ministries\admin.py" />
-    <Compile Include="ministries\migrations\__init__.py" />
-    <Compile Include="ministries\models.py" />
-    <Compile Include="ministries\tests.py" />
-    <Compile Include="ministries\views.py" />
-    <Compile Include="ministries\__init__.py" />
+    <Compile Include="ministry\admin.py" />
+    <Compile Include="ministry\apps.py" />
+    <Compile Include="ministry\migrations\__init__.py" />
+    <Compile Include="ministry\models.py" />
+    <Compile Include="ministry\tests.py" />
+    <Compile Include="ministry\views.py" />
+    <Compile Include="ministry\__init__.py" />
     <Compile Include="project\admin.py">
       <SubType>Code</SubType>
     </Compile>
@@ -79,11 +86,14 @@
     <Folder Include="app\static\app\scripts\" />
     <Folder Include="app\templates\" />
     <Folder Include="app\templates\app\" />
+    <Folder Include="app\templates\app\ministries\" />
     <Folder Include="app\templates\app\news\" />
     <Folder Include="blog\" />
     <Folder Include="blog\templates\" />
-    <Folder Include="ministries\" />
-    <Folder Include="ministries\migrations\" />
+    <Folder Include="gallery\" />
+    <Folder Include="gallery\migrations\" />
+    <Folder Include="ministry\" />
+    <Folder Include="ministry\migrations\" />
     <Folder Include="project\" />
     <Folder Include="soldajustica\" />
   </ItemGroup>
@@ -99,6 +109,8 @@
     </Content>
     <Content Include="app\static\app\content\site.less" />
     <Content Include="app\templates\app\donate.html" />
+    <Content Include="app\templates\app\ministries\details.html" />
+    <Content Include="app\templates\app\ministries\list.html" />
     <Content Include="app\templates\app\news\details.html" />
     <Content Include="app\templates\app\news\list.html" />
     <Content Include="app\templates\app\projects.html" />

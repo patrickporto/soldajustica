@@ -3,10 +3,10 @@
 {% block content %}
 
 {% if carousel %}
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<div id="carousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
         {% for slide in carousel %}
-        <li data-target="#carousel-example-generic" data-slide-to="{{forloop.counter0}}" class="{% if forloop.first %}active{% endif %}"></li>
+        <li data-target="#carousel" data-slide-to="{{forloop.counter0}}" class="{% if forloop.first %}active{% endif %}"></li>
         {% endfor %}
     </ol>
 
@@ -24,11 +24,11 @@
         {% endfor %}
     </div>
 
-    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span class="sr-only">Anterior</span>
     </a>
-    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Próximo</span>
     </a>

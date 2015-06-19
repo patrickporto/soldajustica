@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'app/content/bootstrap.min.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'app/content/site.css' %}" />
     <script src="{% static 'app/scripts/modernizr-2.6.2.js' %}"></script>
+    {% block stylesheets %}{% endblock %}
 </head>
 
 <body>
@@ -31,6 +32,7 @@
                             <li><a href="{% url 'projects' %}">Projetos</a></li>
                             <li><a href="{% url 'get-involved' %}">Envolva-se</a></li>
                             <li><a href="{% url 'donate' %}">Doe</a></li>
+                            <li><a href="{% url 'galleries' %}">Galerias</a></li>
                             <li><a href="{% url 'ministries_list' %}">Ministérios</a></li>
                             <li><a href="{% url 'news_list' %}">Jornal do cristão</a></li>
                         </ul>
@@ -57,7 +59,7 @@
     <script src="{% static 'app/scripts/jquery-1.10.2.js' %}"></script>
     <script src="{% static 'app/scripts/bootstrap.js' %}"></script>
     <script src="{% static 'app/scripts/respond.js' %}"></script>
-{% block scripts %}{% endblock %}
+    {% block scripts %}{% endblock %}
 
 </body>
 </html>
