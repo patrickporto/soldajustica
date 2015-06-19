@@ -4,7 +4,7 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <Name>soldajustica</Name>
     <RootNamespace>soldajustica</RootNamespace>
-    <InterpreterId>{8f0258c5-8627-47c1-900e-35085324f59a}</InterpreterId>
+    <InterpreterId>{c41c47b6-801d-4f2d-875a-0c3b2b323916}</InterpreterId>
     <InterpreterVersion>3.4</InterpreterVersion>
     <WebBrowserPort>8080</WebBrowserPort>
     <PythonDebugWebServerCommandArguments>runserver $(CommandLineArguments)</PythonDebugWebServerCommandArguments>
@@ -49,6 +49,12 @@
     <Compile Include="blog\tests.py" />
     <Compile Include="blog\__init__.py" />
     <Compile Include="manage.py" />
+    <Compile Include="ministries\admin.py" />
+    <Compile Include="ministries\migrations\__init__.py" />
+    <Compile Include="ministries\models.py" />
+    <Compile Include="ministries\tests.py" />
+    <Compile Include="ministries\views.py" />
+    <Compile Include="ministries\__init__.py" />
     <Compile Include="project\admin.py">
       <SubType>Code</SubType>
     </Compile>
@@ -61,9 +67,6 @@
     <Compile Include="soldajustica\urls.py" />
     <Compile Include="soldajustica\wsgi.py" />
     <Compile Include="tasks.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="__init__.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -79,6 +82,8 @@
     <Folder Include="app\templates\app\news\" />
     <Folder Include="blog\" />
     <Folder Include="blog\templates\" />
+    <Folder Include="ministries\" />
+    <Folder Include="ministries\migrations\" />
     <Folder Include="project\" />
     <Folder Include="soldajustica\" />
   </ItemGroup>
@@ -137,6 +142,17 @@
       <BaseInterpreter>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</BaseInterpreter>
       <Version>3.4</Version>
       <Description>soldajustica (Python 64-bit 3.4)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <LibraryPath>Lib\</LibraryPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>Amd64</Architecture>
+    </Interpreter>
+    <Interpreter Include="env\">
+      <Id>{c41c47b6-801d-4f2d-875a-0c3b2b323916}</Id>
+      <BaseInterpreter>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</BaseInterpreter>
+      <Version>3.4</Version>
+      <Description>env (Python 64-bit 3.4)</Description>
       <InterpreterPath>Scripts\python.exe</InterpreterPath>
       <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
       <LibraryPath>Lib\</LibraryPath>

@@ -1,0 +1,17 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2 class="text-center">Ministérios da congregação sol da justiça</h2>
+<div class="row-fluid">
+    {% for ministry in ministries %}
+    <div class="list-group">
+        <a href="{% url 'ministries_details' slug=ministry.slug %}" class="list-group-item">
+            <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> {{ ministry.name }}
+        </a>
+    </div>
+    {% empty %}
+    <p class="list-empty">Nenhum Ministério disponível</p>
+    {% endfor %}
+</div>
+{% endblock %}

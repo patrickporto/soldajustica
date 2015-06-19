@@ -232,3 +232,41 @@ h1 {
     width: 1200px;
     height: 500px;
 }
+
+.ministry-member {
+    min-height: 300px;
+    &-header {
+        background-color: @bgDefault;
+        color: @colDefault;
+    }
+    &-name {
+        font-size: 22px;
+        display: inline-block;
+        margin-left: 10px;
+    }
+    &-photo {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+.list-group {
+    border-radius: 0;
+    border: none;
+    a {
+        border: none;
+        background-color: @bgDefault;
+        color: @colDefault;
+        transition: all ease-in 0.3s;
+        &:first-child,
+        &:last-child {
+            border-radius: 0;
+        }
+        &:hover,
+        &:focus {
+            background-color: @bgHighlight;
+            color: @colHighlight;
+            transition: all ease-in 0.3s;
+        }
+    }
+}

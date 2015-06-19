@@ -210,4 +210,40 @@ h1 {
   width: 1200px;
   height: 500px;
 }
+.ministry-member {
+  min-height: 300px;
+}
+.ministry-member-header {
+  background-color: #f39c12;
+  color: #ffffff;
+}
+.ministry-member-name {
+  font-size: 22px;
+  display: inline-block;
+  margin-left: 10px;
+}
+.ministry-member-photo {
+  width: 140px;
+  height: 140px;
+}
+.list-group {
+  border-radius: 0;
+  border: none;
+}
+.list-group a {
+  border: none;
+  background-color: #f39c12;
+  color: #ffffff;
+  transition: all ease-in 0.3s;
+}
+.list-group a:first-child,
+.list-group a:last-child {
+  border-radius: 0;
+}
+.list-group a:hover,
+.list-group a:focus {
+  background-color: #e67e22;
+  color: #f1c40f;
+  transition: all ease-in 0.3s;
+}
 /*# sourceMappingURL=site.css.map */

@@ -12,4 +12,6 @@ urlpatterns = patterns('',
     url(r'^donate', 'app.views.donate', name='donate'),
     url(r'^news/$', 'app.views.news_list', name='news_list'),
     url(r'^news/(?P<slug>.*)/', 'app.views.news_details', name='news_details'),
+    url(r'^ministries/$', 'app.views.ministries_list', name='ministries_list'),
+    url(r'^ministries/(?P<slug>.*)/', 'app.views.ministries_details', name='ministries_details'),
 )

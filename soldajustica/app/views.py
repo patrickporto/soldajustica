@@ -2,6 +2,7 @@ from django.shortcuts import (
     render,
     get_object_or_404,
 )
+from ministry.models import Ministry
 from project.models import Project
 from blog.models import Post
 from .models import Slide
@@ -37,3 +38,13 @@ def news_details(request, slug):
     context = {}
     context['post'] = get_object_or_404(Post, slug=slug)
     return render(request, 'app/news/details.html', context)
+
+def ministries_list(request):
+    context = {}
+    context['ministries'] = Ministry.objects.all()
+    return render(request, 'app/ministries/list.html', context)
+
+def ministries_details(request, slug):
+    context = {}
+    context['ministry'] = get_object_or_404(Ministry, slug=slug)
+    return render(request, 'app/ministries/details.html', context)

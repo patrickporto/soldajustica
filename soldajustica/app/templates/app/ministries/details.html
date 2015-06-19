@@ -1,0 +1,29 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<div class="row-fluid">
+    <header>
+        <h2 class="text-center">{{ ministry.name }}</h2>
+        <p>{{ ministry.description }}</p>
+    </header>
+    <article>
+        <h3>Integrantes:</h3>
+        <div class="row">
+            {% for member in ministry.members.all %}
+            <div class="col-sm-6">
+                <div class="ministry-member">
+                    <div class="ministry-member-header">
+                        <img src="{{ member.photo.url }}" alt="{{ member.name }}" class="ministry-member-photo" />
+                        <p class="ministry-member-name">{{ member.name }}</p>
+                    </div>
+                    <div class="ministry-member-description">
+                        <p>{{ member.description }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </article>
+</div>
+{% endblock %}
